@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet"
+    href="calculator.css">
+  </head>
+  <body>
+    <div class="container">
+      <p class="display js-display-element"></p>
+      <p>
+        <button onclick="appendNumber(1);"class="digit-button">1</button>
+        <button onclick="appendNumber(2);"class="digit-button">2</button>
+        <button onclick="appendNumber(3);"class="digit-button">3</button>
+        <button onclick="appendOperator('+')"class="append-operator-button">+</button>
+      </p>
+
+      <p>
+        <button onclick="appendNumber(4);"class="digit-button">4</button>
+        <button onclick="appendNumber(5);"class="digit-button">5</button>
+        <button onclick="appendNumber(6);"class="digit-button">6</button>
+        <button onclick="appendOperator('-');"class="append-operator-button">-</button>
+      </p>
+      
+      <p>
+        <button onclick="appendNumber(7);"class="digit-button">7</button>
+        <button onclick="appendNumber(8);"class="digit-button">8</button>
+        <button onclick="appendNumber(9);"class="digit-button">9</button>
+        <button onclick="appendOperator('*');"class="append-operator-button">*</button>
+      </p>
+
+      <p>
+        <button onclick="appendNumber(0);"class="digit-button">0</button>
+        <button onclick="appendDot();"class="digit-button">.</button>
+        <button onclick="calculate();"class="digit-button">=</button>
+        <button onclick="appendOperator('/');"class="append-operator-button">/</button>
+        </p>
+
+        <p>
+          <button onclick="clearCalc()"class="clear-button">Clear</button>
+        </p>
+    </div>
+    
+    <script src="calculator.js"></script>
+  </body>
+</html>
